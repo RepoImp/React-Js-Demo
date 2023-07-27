@@ -1,0 +1,40 @@
+@import "_variables";
+
+.login {
+  max-width: rem(400px);
+  margin: 0 auto;
+  padding: rem(10px) rem(30px);
+  border: 1px $color-border solid;
+  border-radius: $border-rad-lg;
+  box-shadow: 0 0 rem(10px) hsla(0, 0%, 0%, .15);
+
+  & &__link-holder {
+    margin-top: rem(20px);
+    margin-bottom: rem(10px);
+    text-align: center;
+  }
+}
+
+.loginmain {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.brandlogo {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brandHeading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 425px) {
+  .brandlogo {
+  width: 55%;
+
+  }
+}
